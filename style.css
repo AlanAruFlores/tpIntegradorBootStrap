@@ -1,0 +1,55 @@
+
+.textoMain{
+    color:white;
+    font-size: 20px;
+    padding-top: 180px;
+    padding-right: 150px;
+    text-align: right;
+}
+.oradores{
+    display: flex;
+    justify-content: center;
+}
+.textoImagen{
+    color:white;
+}
+.tituloRow{
+    text-align: center;
+    color:grey;
+    font-size: 13px;
+}
+.miSpan{
+    color:black;
+    font-size: 30px;
+}
+.miFormulario{
+    display:flex;
+    justify-content: center;
+}
+#imgCol{
+    background-image: url("images/hawaii.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+#descImagen{
+    background-color: rgb(50, 50, 50);
+}
+#divMain{
+        background-image: url("images/hawaii2.jpg");
+        background-color: rgb(50, 50, 50);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-blend-mode: soft-light;
+        background-attachment: fixed;
+        height: 100vh;
+        overflow: hidden;
+}
+footer{
+    background-color: rgb(10, 37, 49);
+    color: white;
+}
+.spanFoot{
+    color:white;
+    margin:10px 10px 40px 40px
+}
