@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body class ="container-fluid">
+    <div class ="row">
+        <nav class="col navbar navbar-expand-lg bg-dark">
+              <a class="navbar-brand"  style="color :white" href="#">Conf BsAs</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" style = "color: gray"#aria-current="page" href="#">La Conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" style="color:gray" href="#">Los Oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: gray"href="#">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: greenyellow"href="#">Convierte en Orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white"href="#">Comprar Tickets</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+    </div>
+  
+
+    <div class = "row" style="padding-top: 40px;">
+        <div class ="col">
+          <div class="cartas">
+            <div class="alinearTexto card border-primary mb-3" style="max-width: 18rem;">
+              <div class="card-body text-secondary text-align">
+                <h5 class="card-title">Estudiante</h5>
+                <p class="card-text">Tiene un Descuento.</p>
+                <p>80%</p>
+                <p>*presentar documentacion</p>
+              </div>
+            </div>
+            <div class="alinearTexto card border-primary mb-3" style="max-width: 18rem;">
+              <div class="card-body text-secondary text-align">
+                <h5 class="card-title">Trainee</h5>
+                <p class="card-text">Tiene un Descuento.</p>
+                <p>50%</p>
+                <p>*presentar documentacion</p>
+              </div>
+            </div>
+            <div class="alinearTexto card border-warning mb-3" style="max-width: 18rem;">
+              <div class="card-body text-secondary text-align">
+                <h5 class="card-title">Junior</h5>
+                <p class="card-text">Tiene un Descuento.</p>
+                <p>15%</p>
+                <p>*presentar documentacion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="padding-top: 8px;">
+        <div class="col">
+          <h2 class="tituloRow">VENTA<br><span class="miSpan">VALOR DE TICKET $200</span></h2>
+                <div class="miFormulario">   
+                    <div class="form">
+                      <label class ="form-label"for="campo" style="text-align: center;">Anotate como orador para dar una <a href="#">Charla ignite</a>. Cuentanos de que 
+                        quieres hablar</label> 
+                        <br> 
+                        <div class="row ">
+                            <div class="col-md">
+                              <div class="form-floating">
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                              </div>
+                            </div>
+                            <div class="col-md">
+                              <div class="form-floating">
+                                <input type="text" class = "form-control"  placeholder="Apellido" id="apellido">
+                              </div>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="col">
+                              <input type="text" name="" id="corro" placeholder="Correo" class="form-control">
+                              <label style="font-size: 10px; color:grey">Recuerda incluir un titulo para tu charla</label>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="col-md">
+                              <div class="form-floating">
+                                <label for="cantidad">Cantidad</label>
+                                <input type="number" class="form-control" id="cantidad" placeholder="Cantidad">
+                              </div>
+                            </div>
+                            <div class="col-md input-group mb-3">
+                              <div class="form-floating">
+                                <label>Categoria</label>
+                                <br>
+                                  <select class="form-select" id="categorias">
+                                    <option selected>Categoria</option>
+                                    <option value="1">Estudiante</option>
+                                    <option value="2">Trainee</option>
+                                    <option value="3">Junior</option>
+                                  </select>
+                              </div>
+                            </div>
+                          </div>
+                          <br>
+                            <div class="col-md" id ="campoImporte">
+                              <span id="mensajeCompra"></span>
+                              <p>Total a pagar: $<span id="totalPagar"></span></p>
+                            </div>
+                          <br>
+                          <button class="btn btn-success btn-block" onclick="presionarComprar();">Enviar</button>  
+                          <br>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer class="row navbar navbar-expand-lg navbar-light justify-content-center">
+      <div class="col">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><span class="spanFoot">Preguntas Frecuentes</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><span class ="spanFoot">Contactanos</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link " href="#"><span class="spanFoot">Prensa</span></a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link " href="#"><span class="spanFoot">Conferencias</span></a>
+                </li> 
+                <li class="nav-item active">
+                  <a class="nav-link " href="#"><span class="spanFoot">Terminos y Condiciones</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link " href="#"><span class="spanFoot">Privacidad</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link " href="#"><span class="spanFoot">Estudiantes</span></a>
+                </li>
+            </ul>
+      </div>
+  </footer>
+    <script src="../script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
